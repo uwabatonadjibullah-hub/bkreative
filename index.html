@@ -30,7 +30,7 @@
                 <h1 class="text-3xl font-bold uppercase tracking-widest mb-4">BKreative Identity Concept</h1>
                 
                 <!-- Added PDF Download Button -->
-                <a href="https://drive.google.com/file/d/1PR9dbT2lSv8Fqb_z39TgAtXAFrMToJuU/view?usp=sharing" target="_blank" class="inline-flex items-center gap-2 bg-[#F4A900] hover:bg-[#FFD700] text-[#0F2C61] text-sm font-bold py-2.5 px-6 rounded-full shadow-lg transition-transform transform hover:-translate-y-0.5 hover:shadow-xl">
+                <a href="https://drive.google.com/drive/u/0/folders/1fh2UfXyjXuNHabyoGxeX_IP-g-d21ntx" target="_blank" class="inline-flex items-center gap-2 bg-[#F4A900] hover:bg-[#FFD700] text-[#0F2C61] text-sm font-bold py-2.5 px-6 rounded-full shadow-lg transition-transform transform hover:-translate-y-0.5 hover:shadow-xl">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                     </svg>
@@ -232,18 +232,28 @@
                 </div>
             </div>
 
-            <!-- 3. ICON ONLY (No split needed) -->
+            <!-- 3. ICON ONLY (Redesigned 1:1) -->
             <div class="flex flex-col bg-gray-50">
                 <div class="p-8 flex-grow flex flex-col justify-center items-center relative group">
-                     <div class="mb-6 text-[10px] font-bold text-gray-500 uppercase tracking-wide self-start">Icon Only</div>
+                     <div class="mb-6 text-[10px] font-bold text-gray-500 uppercase tracking-wide self-start">Icon Only (1:1)</div>
                      
-                     <!-- ID: logo-icon -->
-                     <svg width="100px" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo-icon">
-                         <title>BKreative Icon</title>
-                         <path d="M50 40 H90 V160 H50 V40 Z" fill="#0F2C61"/>
-                         <path d="M100 160 L100 110 L140 70 L170 70 L120 120 L175 160 H135 L100 135 V160 H100 Z" fill="#F4A900"/>
-                         <circle cx="160" cy="50" r="10" fill="#F4A900"/>
-                    </svg>
+                     <!-- Container for visual presentation (App Icon style) -->
+                     <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 flex items-center justify-center transform transition-transform hover:scale-105 duration-300">
+                         <!-- ID: logo-icon -->
+                         <svg width="128px" height="128px" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo-icon">
+                             <title>BKreative Icon</title>
+                             <defs>
+                                <linearGradient id="goldGradientIcon" x1="0%" y1="100%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#F4A900;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Paths shifted X:-12.5 to perfectly center on 200x200 canvas -->
+                             <path d="M37.5 40 H77.5 V160 H37.5 V40 Z" fill="#0F2C61"/>
+                             <path d="M87.5 160 L87.5 110 L127.5 70 L157.5 70 L107.5 120 L162.5 160 H122.5 L87.5 135 V160 H87.5 Z" fill="url(#goldGradientIcon)"/>
+                             <circle cx="147.5" cy="50" r="10" fill="#F4A900"/>
+                        </svg>
+                     </div>
                 </div>
                 <div class="bg-gray-100 p-6 flex flex-col gap-3 items-center border-t border-gray-200">
                     <button onclick="downloadSVG('logo-icon', 'bkreative_icon.svg')" class="w-full flex justify-center items-center gap-2 bg-[#0F2C61] hover:bg-blue-900 text-white text-xs font-bold py-3 px-6 rounded-lg shadow-md transition-all transform hover:scale-105">
