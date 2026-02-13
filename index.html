@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKreative Official Logo Concept</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* CSS to create a checkerboard pattern to visualize transparency */
+        .checkerboard {
+            background-color: #ffffff;
+            background-image: linear-gradient(45deg, #e5e7eb 25%, transparent 25%),
+                              linear-gradient(-45deg, #e5e7eb 25%, transparent 25%),
+                              linear-gradient(45deg, transparent 75%, #e5e7eb 75%),
+                              linear-gradient(-45deg, transparent 75%, #e5e7eb 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-6">
+
+    <div class="max-w-4xl w-full bg-white rounded-2xl shadow-xl overflow-hidden">
+        
+        <!-- Header -->
+        <div class="bg-blue-900 text-white p-8 text-center relative overflow-hidden">
+            <div class="relative z-10">
+                <h1 class="text-3xl font-bold uppercase tracking-widest mb-2">BKreative Identity Concept</h1>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-800 rounded-full opacity-50"></div>
+        </div>
+
+        <!-- Main Action Area -->
+        <div class="bg-blue-50 p-6 flex flex-col items-center border-b border-blue-100">
+            <button onclick="downloadSVG()" class="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-all transform hover:scale-105 active:scale-95 text-lg">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Download SVG File
+            </button>
+            <p class="text-blue-600/70 text-xs mt-3">Click to save 'bkreative_logo.svg' to your device</p>
+        </div>
+
+        <!-- Logo Preview Area with Checkerboard -->
+        <div class="relative w-full">
+            <div class="absolute top-2 left-2 bg-white/80 backdrop-blur px-2 py-1 rounded text-xs font-mono text-gray-500 z-10 border border-gray-200 shadow-sm">
+                Preview: Transparent Background
+            </div>
+            <div class="p-12 flex flex-col items-center justify-center checkerboard border-b border-gray-200">
+                
+                <!-- THE VECTOR LOGO SOURCE (Hidden inputs for logic, displayed for visual) -->
+                <!-- Updated ViewBox width to 750 to fit the full text -->
+                <div id="svg-container">
+                    <svg width="750" height="200" viewBox="0 0 750 200" fill="none" xmlns="http://www.w3.org/2000/svg" id="bkreative-logo">
+                        <title>BKreative Logo</title>
+                        <defs>
+                            <linearGradient id="goldGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#F4A900;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Symbol: The "Foundational Pillar" (Bank) & The "Ascending Spark" (Creativity) -->
+                        <!-- The Pillar (BK Blue) -->
+                        <path d="M50 40 H90 V160 H50 V40 Z" fill="#0F2C61"/>
+                        
+                        <!-- The Spark (Creative Gold) - Stylized 'K' chevron / upward arrow -->
+                        <path d="M100 160 L100 110 L140 70 L170 70 L120 120 L175 160 H135 L100 135 V160 H100 Z" fill="url(#goldGradient)"/>
+                        
+                        <!-- The Future Point (The dot/innovation) -->
+                        <circle cx="160" cy="50" r="10" fill="#F4A900"/>
+
+                        <!-- Text: Typography System -->
+                        <g transform="translate(200, 115)">
+                            <!-- "BK" - Bold, Blue (The Anchor) -->
+                            <text x="0" y="30" font-family="Arial, sans-serif" font-weight="bold" font-size="80" fill="#0F2C61">BK</text>
+                            
+                            <!-- "reative" - Light/Regular, Dark Grey (The Expression) -->
+                            <text x="120" y="30" font-family="Arial, sans-serif" font-weight="normal" font-size="80" fill="#333333">REATIVE</text>
+                            
+                            <!-- Tagline: Optional Context -->
+                            <text x="5" y="65" font-family="Arial, sans-serif" font-weight="500" font-size="14" fill="#666666" letter-spacing="0.2em">FINANCING THE FUTURE</text>
+                        </g>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Variations Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-b border-gray-200">
+            <!-- White on Blue (Inverted) -->
+            <div class="bg-[#0F2C61] p-8 flex justify-center items-center relative group">
+                 <div class="absolute top-2 left-2 text-[10px] text-white/50 group-hover:text-white transition-colors">Inverted</div>
+                 <svg width="150" height="50" viewBox="0 0 750 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 40 H90 V160 H50 V40 Z" fill="#FFFFFF"/>
+                    <path d="M100 160 L100 110 L140 70 L170 70 L120 120 L175 160 H135 L100 135 V160 H100 Z" fill="#F4A900"/>
+                    <circle cx="160" cy="50" r="10" fill="#F4A900"/>
+                    <text x="200" y="145" font-family="Arial, sans-serif" font-weight="bold" font-size="80" fill="#FFFFFF">BK</text>
+                    <text x="320" y="145" font-family="Arial, sans-serif" font-weight="normal" font-size="80" fill="#FFFFFF">REATIVE</text>
+                </svg>
+            </div>
+            <!-- Monochrome (Black) -->
+            <div class="bg-white p-8 flex justify-center items-center border-l border-r border-gray-200 relative group">
+                 <div class="absolute top-2 left-2 text-[10px] text-black/50 group-hover:text-black transition-colors">Monochrome</div>
+                 <svg width="150" height="50" viewBox="0 0 750 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 40 H90 V160 H50 V40 Z" fill="#000000"/>
+                    <path d="M100 160 L100 110 L140 70 L170 70 L120 120 L175 160 H135 L100 135 V160 H100 Z" fill="#000000"/>
+                    <circle cx="160" cy="50" r="10" fill="#000000"/>
+                    <text x="200" y="145" font-family="Arial, sans-serif" font-weight="bold" font-size="80" fill="#000000">BK</text>
+                    <text x="320" y="145" font-family="Arial, sans-serif" font-weight="normal" font-size="80" fill="#000000">REATIVE</text>
+                </svg>
+            </div>
+             <!-- Icon Only -->
+            <div class="bg-gray-50 p-8 flex justify-center items-center relative group">
+                 <div class="absolute top-2 left-2 text-[10px] text-gray-500 group-hover:text-gray-800 transition-colors">Icon Only</div>
+                 <svg width="60" height="60" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M50 40 H90 V160 H50 V40 Z" fill="#0F2C61"/>
+                     <path d="M100 160 L100 110 L140 70 L170 70 L120 120 L175 160 H135 L100 135 V160 H100 Z" fill="#F4A900"/>
+                     <circle cx="160" cy="50" r="10" fill="#F4A900"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function downloadSVG() {
+            // Get the SVG content
+            const svgElement = document.getElementById('bkreative-logo');
+            
+            // Serialize the SVG to a string
+            const serializer = new XMLSerializer();
+            let source = serializer.serializeToString(svgElement);
+
+            // Add namespaces if they are missing (browsers sometimes omit them when serializing inline SVG)
+            if(!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)){
+                source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
+            }
+            if(!source.match(/^<svg[^>]+xmlns:xlink/)){
+                source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
+            }
+
+            // Create a Blob from the SVG string
+            const blob = new Blob([source], {type: "image/svg+xml;charset=utf-8"});
+            const url = URL.createObjectURL(blob);
+
+            // Create a temporary anchor element to trigger the download
+            const downloadLink = document.createElement("a");
+            downloadLink.href = url;
+            downloadLink.download = "bkreative_logo.svg";
+            
+            // Append to body, click, and remove
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        }
+    </script>
+</body>
+</html>
